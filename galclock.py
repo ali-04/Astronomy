@@ -9,9 +9,9 @@ def unit1 (hurs,minute,socund) :
 def multyunit (one):
     one = int (one)
     mu = dict()
-    mu ["hurs"] = mu // 360000
-    mu ["minute"] = (mu % 360000) // 6000
-    mu ["socund"] = ((mu % 360000) % 6000) // 100
+    mu ["hurs"] = one // 360000
+    mu ["minute"] = (one % 360000) // 6000
+    mu ["socund"] = ((one % 360000) % 6000) // 100
     return mu 
 
 

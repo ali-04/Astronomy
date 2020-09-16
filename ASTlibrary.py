@@ -1,21 +1,34 @@
-def unit1 (hurs,minute,socund) :
+import time 
+
+
+def nowunit ():
+    return time.time ()
+
+
+
+def unit1 (socond10,socund,minute,hurs,day) :
     hurs = int (hurs)
     minute = int (minute)
     socund = int (socund)
-    return ((((hurs*60)+minute)*60)+socund*1) 
+    day = int (day)
+    return (((((((((day)*24)+hurs)*60)+minute)*60)+socund)*10)+socond10) 
 
 
 
 def multyunit (one):
     one = int (one)
     mu = dict()
-    mu ["hurs"] = one // 3600
-    mu ["minute"] = (one % 3600) // 60
-    mu ["socund"] = ((one % 3600) % 60) // 1
+    mu ["day"] = one // 864000
+    mu ["hurs"] = ( one % 864000 ) // 36000
+    mu ["minute"] = (one % 36000) // 600
+    mu ["socund"] = (one %  600) // 10
+    mu ["socund10"] = one  % 10
     return mu 
 
 
 def rounddown (num):
     return num // 1
+
+
 
 

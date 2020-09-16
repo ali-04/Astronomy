@@ -15,5 +15,7 @@ def multyunit (one):
     return mu 
 
 
+def rounddown (num):
+    return num // 1
 
 

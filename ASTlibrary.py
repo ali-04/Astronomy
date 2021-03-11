@@ -1,4 +1,7 @@
 import time 
+import datetime
+
+
 
 
 def nowunit ():
@@ -28,6 +31,36 @@ def multyunit (one):
 
 def rounddown (num):
     return num // 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class Time :
+    def __init__ (self,):...
+
+
+    def _time_now (): 
+    import datetime ,time ,re
+    return datetime.time.fromisoformat(re.findall(r'(.{2}:.+:.{2})',time.asctime())[0])
+
+
+
 
 
 
